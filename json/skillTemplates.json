@@ -3,7 +3,8 @@
     "_id" : "CLAUSE_TIME_INTERVAL", 
     "template" : {
         "en" : "every {$time} sec", 
-        "ko" : "{$time}초마다"
+        "ko" : "{$time}초마다",
+        "ru" : "каждые {$time} секунд{?time; value > 1; ы; у;}"
     }
 },
 { 
@@ -61,7 +62,8 @@
     "_id" : "TEMPLATE_DAMAGE_UP_PER_HIT", 
     "template" : {
         "en" : "Damage increases per hit", 
-        "ko" : "연쇄 명중 시 마다 피해 증가"
+        "ko" : "연쇄 명중 시 마다 피해 증가",
+        "ru" : "Увеличивает урон при каждом попадании"
     }
 },
 { 
@@ -75,7 +77,8 @@
     "_id" : "TEMPLATE_CD_EXCEPTION_DAMAGE", 
     "template" : {
         "en" : "Deals {$damage} {$elementType} damage while the cooldown is active", 
-        "ko" : "재사용 시간 동안 {$damage}의 {$elementType} 피해"
+        "ko" : "재사용 시간 동안 {$damage}의 {$elementType} 피해",
+        "ru" : "Наносит {$damage} {$elementType=элементального} урона пока навык перезаряжается"
     }
 },
 { 
@@ -124,7 +127,8 @@
     "_id" : "TEMPLATE_MOVE_ENEMY", 
     "template" : {
         "en" : "Move {#distance=CLAUSE_DISTANCE} {&behind=behind} {&left=left of} {&right=right of} the enemy {#status=CLAUSE_INFLICTED} {#condition=CLAUSE_CONDITION_ON}", 
-        "ko" : "{#condition=CLAUSE_CONDITION_ON} {#status=CLAUSE_INFLICTED} 적 {&behind=너머}{?distance; !value; 로} {&left=위치 왼쪽으로} {&right=위치 오른쪽으로} {#distance=CLAUSE_DISTANCE} 이동"
+        "ko" : "{#condition=CLAUSE_CONDITION_ON} {#status=CLAUSE_INFLICTED} 적 {&behind=너머}{?distance; !value; 로} {&left=위치 왼쪽으로} {&right=위치 오른쪽으로} {#distance=CLAUSE_DISTANCE} 이동",
+        "ru" : "Перемещает персонажа {#distance=CLAUSE_DISTANCE} {&behind=за спину} {&left=влево относительно} {&right=вправо относительно} цели {#status=CLAUSE_INFLICTED} {#condition=CLAUSE_CONDITION_ON}"
     }
 },
 { 
@@ -219,7 +223,8 @@
     "_id" : "CLAUSE_CONDITION_AFTER", 
     "template" : {
         "en" : "after {$condition} {#status=CLAUSE_TO_STATUS} {#skill=CLAUSE_SKILL_WITH}", 
-        "ko" : "{#skill=CLAUSE_SKILL_WITH} {#status=CLAUSE_TO_STATUS} {$condition} 후"
+        "ko" : "{#skill=CLAUSE_SKILL_WITH} {#status=CLAUSE_TO_STATUS} {$condition} 후",
+        "ru" : "после {$condition} {#status=CLAUSE_TO_STATUS} {#skill=CLAUSE_SKILL_WITH}"
     }
 },
 { 
@@ -406,7 +411,8 @@
     "_id" : "TEMPLATE_SKILL_TYPE", 
     "template" : {
         "en" : "{$skillType} skill", 
-        "ko" : "{$skillType} 무공"
+        "ko" : "{$skillType} 무공",
+        "ru" : "{$skillType}"
     }
 },
 { 
@@ -1765,7 +1771,7 @@
     "template" : {
         "en" : "{#buff=CLAUSE_BUFF} increases {$stat} {&party=of the user and party members} {&withinArea=within the area} {&fromEquip=gained from equips} by {&additional=an additional} {$percent}{&percent=%} {$value} {&perStack=per stack} {#additionalStat=CLAUSE_ADDITIONAL_STAT} {#times=CLAUSE_TIMES} {#time=CLAUSE_TIME_DURATION} {#condition=CLAUSE_CONDITION_ON} {&duringUse=during use} {&withinArea2=while within the area} {#skill=CLAUSE_BUFF_ACTIVE}", 
         "ko" : "{#buff=CLAUSE_BUFF_ACTIVE} {#skill=CLAUSE_BUFF_ACTIVE} {#condition=CLAUSE_CONDITION_ON} {&withinArea=영역 내} {&party=시전자 및 파티원} {&duringUse=사용 중} {#time=CLAUSE_TIME_DURATION} {#times=CLAUSE_TIMES} {&fromEquip=장비} {$stat} {&additional=추가} {$percent}{&percent=%} {$value} {&perStack=중첩 당} 증가 {#additionalStat=CLAUSE_ADDITIONAL_STAT}",
-        "ru" : "{#buff=CLAUSE_BUFF} увеличивает {$stat} {&party=всем членам пати} {&withinArea=within the area} {&fromEquip=от снаряжения} на {&additional=an additional} {$percent}{&percent=%} {$value} {&perStack=per stack} {#additionalStat=CLAUSE_ADDITIONAL_STAT} {#times=CLAUSE_TIMES} {#time=CLAUSE_TIME_DURATION} {#condition=CLAUSE_CONDITION_ON} {&duringUse=во время исвпользованя} {&withinArea2=while within the area} {#skill=CLAUSE_BUFF_ACTIVE}"
+        "ru" : "{#buff=CLAUSE_BUFF} увеличивает {$stat} {&party=всем членам пати} {&withinArea=within the area} {&fromEquip=от снаряжения} на {&additional=an additional} {$percent}{&percent=%} {$value} {&perStack=per stack} {#additionalStat=CLAUSE_ADDITIONAL_STAT} {#times=CLAUSE_TIMES} {#time=CLAUSE_TIME_DURATION} {#condition=CLAUSE_CONDITION_ON} {&duringUse=во время использованя} {&withinArea2=while within the area} {#skill=CLAUSE_BUFF_ACTIVE}"
     }
 },
 { 
