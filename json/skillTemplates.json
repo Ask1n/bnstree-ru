@@ -464,7 +464,8 @@
     "_id" : "CLAUSE_CONDITION_ESCAPE", 
     "template" : {
         "en" : "on escape from {$status}", 
-        "ko" : "{$status} 상태 탈출 시"
+        "ko" : "{$status} 상태 탈출 시",
+        "ru" : "при отмене эффектов {$status}"
     }
 },
 { 
@@ -611,14 +612,16 @@
     "_id" : "TEMPLATE_INFLICT_STATUS_PULL", 
     "template" : {
         "en" : "Pulls enemies and inflicts {#time=CLAUSE_TIME} {$status}", 
-        "ko" : "적을 끌어당겨 {#time=CLAUSE_TIME} {$status}"
+        "ko" : "적을 끌어당겨 {#time=CLAUSE_TIME} {$status}",
+        "ru" : "При использовании притягивает врагов и накладывает {$status} {#time=CLAUSE_TIME}"
     }
 },
 { 
     "_id" : "TEMPLATE_STANCE_CHANGE", 
     "template" : {
         "en" : "Switch to {$stance} {#condition=CLAUSE_CONDITION_ON}", 
-        "ko" : "{#condition=CLAUSE_CONDITION_ON} {$stance}로 전환"
+        "ko" : "{#condition=CLAUSE_CONDITION_ON} {$stance}로 전환",
+        "ru" : "Меняет стойку на {$stance} {#condition=CLAUSE_CONDITION_ON}"
     }
 },
 { 
@@ -632,7 +635,8 @@
     "_id" : "TEMPLATE_STATUS_MAINTAIN", 
     "template" : {
         "en" : "Extends {$status} {&all=status effects} up to {#time=CLAUSE_TIME}", 
-        "ko" : "{$status} 상태{&all=이상 효과} {#time=CLAUSE_TIME} 유지"
+        "ko" : "{$status} 상태{&all=이상 효과} {#time=CLAUSE_TIME} 유지",
+        "ru" : "Прождевает {$status} {&all=контроль} на {#time=CLAUSE_TIME}"
     }
 },
 { 
@@ -959,7 +963,7 @@
     "template" : {
         "en" : "Heals the user {&party=and party members} {&withinArea=within the area} {&additional=an additional} {$percent}% of their health {#time=CLAUSE_TIME_OVER} {#times=CLAUSE_TIMES} {#condition=CLAUSE_CONDITION_ON} {#buff=CLAUSE_BUFF_ACTIVE}", 
         "ko" : "{#buff=CLAUSE_BUFF_ACTIVE} {#condition=CLAUSE_CONDITION_ON} {&withinArea=영역 내} 시전자 {&party=및 파티원} {#times=CLAUSE_TIMES} {#time=CLAUSE_TIME_OVER} 생명력 {&additional=추가} {$percent}% 회복",
-        "ru" : "Восстанавливает игроку {&party=и членам пати} {$percent}% HP {&withinArea=в зоне действия навыка} {&additional=и дополнительно}{#time=CLAUSE_TIME_OVER} {#times=CLAUSE_TIMES} {#condition=CLAUSE_CONDITION_ON} {#buff=CLAUSE_BUFF_ACTIVE}"
+        "ru" : "Восстанавливает персонажу {&party=и членам пати} {$percent}% HP {&withinArea=в зоне действия навыка} {&additional=и дополнительно}{#time=CLAUSE_TIME_OVER} {#times=CLAUSE_TIMES} {#condition=CLAUSE_CONDITION_ON} {#buff=CLAUSE_BUFF_ACTIVE}"
     }
 },
 { 
@@ -1104,14 +1108,16 @@
     "_id" : "TEMPLATE_THREAT", 
     "template" : {
         "en" : "Generates {$percent}% additional threat", 
-        "ko" : "피해량의 {$percent}% 위협"
+        "ko" : "피해량의 {$percent}% 위협",
+        "ru" : "Увеличивает агро на {$percent}%"
     }
 },
 { 
     "_id" : "CLAUSE_DISTANCE", 
     "template" : {
         "en" : "{$distance}m", 
-        "ko" : "{$distance}m"
+        "ko" : "{$distance}m",
+        "ru" : "{$distance}м"
     }
 },
 { 
@@ -1133,7 +1139,8 @@
     "_id" : "TEMPLATE_RESIST_PROJECTILE", 
     "template" : {
         "en" : "{&area=Creates a} {#time=CLAUSE_TIME} projectile resist {&area=area}", 
-        "ko" : "{#time=CLAUSE_TIME} 투사체 저항 {&area=영역 생성}"
+        "ko" : "{#time=CLAUSE_TIME} 투사체 저항 {&area=영역 생성}",
+        "ru" : "{&area=Имунитет} {#time=CLAUSE_TIME} к снарядам {&area=в области действия навыка}"
     }
 },
 { 
@@ -1575,7 +1582,8 @@
     "_id" : "TEMPLATE_DAMAGE_REDUCTION", 
     "template" : {
         "en" : "Reduces {&first=the first} damage taken {&party=by the user and party members} {&withinArea=within the area} by {$percent}% {#time=CLAUSE_TIME_DURATION} {#times=CLAUSE_TIMES} {&duringUse=during use}", 
-        "ko" : "{&duringUse=사용 중} {&withinArea=영역 내} {&party=시전자 및 파티원} {#time=CLAUSE_TIME_DURATION} 받는 {&first=첫} {#times=CLAUSE_TIMES} 피해 {$percent}% 감소"
+        "ko" : "{&duringUse=사용 중} {&withinArea=영역 내} {&party=시전자 및 파티원} {#time=CLAUSE_TIME_DURATION} 받는 {&first=첫} {#times=CLAUSE_TIMES} 피해 {$percent}% 감소",
+        "ru" : "Снижает урон {&first=от первого удара} получаемый {&party=членами группы} {&withinArea=в области действия навыка} на {$percent}% {#time=CLAUSE_TIME_DURATION} {#times=CLAUSE_TIMES} {&duringUse=при использовании}"
     }
 },
 { 
@@ -1700,14 +1708,15 @@
     "template" : {
         "en" : "{$skill} inflicts {#stack=CLAUSE_STACK} {#time=CLAUSE_TIME} {$status} {#statDown=CLAUSE_STAT_DOWN} {#timeAfter=CLAUSE_TIME_AFTER} {&withinArea=to enemies within the area} {&players=to players and familiars} {&additional=to additional enemies hit} {#condition=CLAUSE_CONDITION_ON} {#statusOther=CLAUSE_TO_STATUS}", 
         "ko" : "{$skill} {#statusOther=CLAUSE_TO_STATUS} {#condition=CLAUSE_CONDITION_ON} {&withinArea=영역 내} {&additional=추가 명중된} 적 {&players=플래이어와 소환수} {#timeAfter=CLAUSE_TIME_AFTER} {#time=CLAUSE_TIME} {$status} {#statDown=CLAUSE_STAT_DOWN} {#stack=CLAUSE_STACK}",
-        "ru" : "{$skill} накладывает {$status} {?statDown; value; ;на} {#stack=CLAUSE_STACK} {#time=CLAUSE_TIME} {#statDown=CLAUSE_STAT_DOWN} {#timeAfter=CLAUSE_TIME_AFTER} {&withinArea=на врагов в области действия} {&players=to players and familiars} {&additional=to additional enemies hit} {#condition=CLAUSE_CONDITION_ON} {#statusOther=CLAUSE_TO_STATUS}"
+        "ru" : "{$skill} накладывает эффект {$status} {?statDown; value; ;на} {#stack=CLAUSE_STACK} {#time=CLAUSE_TIME} {#statDown=CLAUSE_STAT_DOWN} {#timeAfter=CLAUSE_TIME_AFTER} {&withinArea=на врагов в области действия} {&players=to players and familiars} {&additional=по дополнительным целям при} {#condition=CLAUSE_CONDITION_ON} {#statusOther=CLAUSE_TO_STATUS}"
     }
 },
 { 
     "_id" : "TEMPLATE_DURATION_REFRESH", 
     "template" : {
         "en" : "Duration of {$skill} is refreshed {#condition=CLAUSE_CONDITION_ON}", 
-        "ko" : "{#condition=CLAUSE_CONDITION_ON} {$skill} 지속 시간 초기화"
+        "ko" : "{#condition=CLAUSE_CONDITION_ON} {$skill} 지속 시간 초기화",
+        "ru" : "Действие навыка {$skill} обновляется {#condition=CLAUSE_CONDITION_ON}"
     }
 },
 { 
@@ -1744,7 +1753,8 @@
     "_id" : "TEMPLATE_DAMAGE_HIT_CONDITION", 
     "template" : {
         "en" : "{?firstHit; value; First hit; Subsequent hits} deals {$damage} {$elementType} damage {#time=CLAUSE_TIME_OVER}", 
-        "ko" : "{?firstHit; value; 첫 공격 명중 시; 이후} {#time=CLAUSE_TIME_OVER} {$damage}의 {$elementType}피해"
+        "ko" : "{?firstHit; value; 첫 공격 명중 시; 이후} {#time=CLAUSE_TIME_OVER} {$damage}의 {$elementType}피해",
+        "ru" : "Наносит {$damage} {$elementType=элементального} урона {?firstHit; value; первой атакой;} {#time=CLAUSE_TIME_OVER}"
     }
 },
 { 
