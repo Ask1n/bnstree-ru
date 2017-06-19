@@ -1757,7 +1757,7 @@
         "hit24" : "Hit with the 2nd, 4th attack", 
         "hit135" : "Hit with the 1st, 3rd, 5th attack", 
         "consecutiveHit" : "Каждый попавший удар", 
-        "consecutiveUse" : "Consecutive use", 
+        "consecutiveUse" : "Повторном использовании", 
         "consecutiveUse4" : "4 consecutive use", 
         "ember5Hit" : "Hitting an enemy with 5 stacks of ember", 
         "pull3" : "Стягивает трех противников", 

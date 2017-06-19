@@ -33,7 +33,8 @@
     "_id" : "TEMPLATE_DAMAGE_INCREASE_PERCENT", 
     "template" : {
         "en" : "Damage {&skill=of} {$skill} increases by {$percent}% {#time=CLAUSE_TIME_DURATION} {&withinArea=while within the area} {#condition=CLAUSE_CONDITION_ON}", 
-        "ko" : "{&withinArea=영역 내} {#condition=CLAUSE_CONDITION_ON} {#time=CLAUSE_TIME_DURATION} {$skill} 피해량 {$percent}% 증가"
+        "ko" : "{&withinArea=영역 내} {#condition=CLAUSE_CONDITION_ON} {#time=CLAUSE_TIME_DURATION} {$skill} 피해량 {$percent}% 증가",
+        "ru" : "Увеличивает урон {&skill=of} {$skill} на {$percent}% {#time=CLAUSE_TIME_DURATION} {&withinArea=в области действия} {#condition=CLAUSE_CONDITION_ON}"
     }
 },
 { 
@@ -733,7 +734,8 @@
     "_id" : "TEMPLATE_SOULBLADE", 
     "template" : {
         "en" : "Soulblade skills available {#time=CLAUSE_TIME_DURATION}", 
-        "ko" : "{#time=CLAUSE_TIME_DURATION} 어검 무공 사용 가능"
+        "ko" : "{#time=CLAUSE_TIME_DURATION} 어검 무공 사용 가능",
+        "ru" : "Эффект Soulblade {#time=CLAUSE_TIME_DURATION}"
     }
 },
 { 
@@ -1734,7 +1736,8 @@
     "_id" : "TEMPLATE_DAMAGE_INCREASE", 
     "template" : {
         "en" : "Damage increases by {$damage} {$elementType} damage {#times=CLAUSE_TIMES} {#condition=CLAUSE_CONDITION_ON}", 
-        "ko" : "{#condition=CLAUSE_CONDITION_ON} {#times=CLAUSE_TIMES} {$damage}의 {$elementType}피해 증가"
+        "ko" : "{#condition=CLAUSE_CONDITION_ON} {#times=CLAUSE_TIMES} {$damage}의 {$elementType}피해 증가",
+        "ru" : "Дополнительно наносит {$damage} {$elementType=элементального} урона {#times=CLAUSE_TIMES} {#condition=CLAUSE_CONDITION_ON}"
     }
 },
 { 
